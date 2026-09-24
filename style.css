@@ -1,0 +1,108 @@
+/* Paleta institucional */
+:root {
+  --ame-blue: #191970;
+  --ame-gray: #B0C4DE;
+  --ame-dark-gray: #95a5a6;
+}
+
+/* Corrige o corte ao clicar nos links do menu */
+html {
+  scroll-padding-top: 56px; /* altura da navbar fixa */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 56px; /* espaço visual abaixo da navbar */
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(25, 25, 112, 0.95); /* azul com transparência */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #fff !important;
+}
+.navbar-brand img { height: 30px; margin-right: 8px; }
+.nav-link { color: #fff !important; transition: color 0.3s; }
+.nav-link:hover { color: var(--ame-gray) !important; }
+
+/* Hero */
+#home {
+  background-color: #f9f9f9;
+}
+#home img { max-height: 180px; }
+#home p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: var(--ame-gray);
+}
+
+/* Seções */
+section {
+  display: block;
+  margin-bottom: 80px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+section:nth-of-type(even) {
+  background-color: #f8f9fa; /* fundo alternado */
+}
+hr { margin: 60px 0; }
+
+/* Títulos e textos */
+section h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  color: var(--ame-blue);
+}
+section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Equipe */
+#equipe .card-img-top {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Contato */
+#contato .row { display: flex; align-items: flex-start; }
+#contato .col-md-6:first-child { padding-right: 40px; }
+#contato .col-md-6:last-child { padding-left: 40px; }
+
+/* Serviços */
+.card {
+  border: none;
+  border-radius: 8px; /* bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* sombra suave */
+}
+.card-body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--ame-blue);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--ame-gray);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+.btn-primary:hover { background-color: var(--ame-dark-gray); }
+
+/* Footer */
+footer {
+  background-color: var(--ame-blue);
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+}
